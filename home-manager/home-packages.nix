@@ -62,7 +62,5 @@
 
     # WM stuff
     libnotify
-    xdg-desktop-portal-gnome
-    xdg-desktop-portal-gtk
   ];
 }

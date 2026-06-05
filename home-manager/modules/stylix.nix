@@ -14,7 +14,6 @@
 			};
 			alacritty.enable = false;
             noctalia-shell.enable = false;
-            niri.enable = false;
 			#          ghostty.enable = false;
 			# vscode.enable = false;
 			# waybar.enable = false;

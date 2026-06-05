@@ -335,13 +335,13 @@ window-rule {
     // open-floating true
 }
 
-window-rule {
-    match app-id="^Alacritty$"
-
-    background-effect {
-        blur true
-    }
-}
+// window-rule {
+//     match app-id="^Alacritty$"
+//
+//     background-effect {
+//         blur true
+//     }
+// }
 
 // Open the Firefox picture-in-picture player as floating by default.
 window-rule {

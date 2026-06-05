@@ -30,6 +30,9 @@
 #  services.power-profiles-daemon.enable = true;
   services.upower.enable = true;
 
+#TODO: I don't know what the fuck is this, will review later
+  services.xserver.updateDbusEnvironment = true;
+
   # Set your time zone.
   time.timeZone = "Asia/Kolkata";
 
@@ -50,7 +53,13 @@
 
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-	programs.zsh.enable = true;
+  programs.zsh.enable = true;
+  programs.uwsm.enable = true;
+  programs.uwsm.waylandCompositors.niri = {
+      binPath = "/run/current-system/sw/bin/niri-session";
+      comment = "Niri (UWSM)";
+      prettyName = "Niri";
+  };
   users = {
 	defaultUserShell = pkgs.zsh;
       users."priyanshoon" = {
@@ -73,6 +82,9 @@
     alacritty
     firefox
     home-manager
+
+    xdg-desktop-portal-gtk
+    xdg-desktop-portal-gnome
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
