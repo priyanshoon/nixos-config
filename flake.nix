@@ -1,0 +1,44 @@
+{
+    description = "uwu nixos config";
+    
+    nixConfig = {
+        extra-substituters = [ "https://noctalia.cachix.org" ];
+        extra-trusted-public-keys = [ "noctalia.cachix.org-1:pCOR47nnMEo5thcxNDtzWpOxNFQsBRglJzxWPp3dkU4=" ];
+    };
+
+    inputs = {
+        nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+        home-manager = {
+            url = "github:nix-community/home-manager";
+        };
+
+        nixvim = {
+            url = "github:nix-community/nixvim";
+        };
+
+        noctalia = {
+            url = "github:noctalia-dev/noctalia-shell";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
+
+        nixos-hardware.url = "github:NixOS/nixos-hardware/master";
+    };
+
+    outputs = inputs@{ nixpkgs, home-manager, ... }: {
+        nixosConfigurations = {
+            higuruma = nixpkgs.lib.nixosSystem {
+                system = "x86_64-linux";
+                specialArgs = { inherit inputs; };
+                modules = [
+                    ./hosts/higuruma/configuration.nix
+                ];
+            };
+        };
+
+        homeConfigurations."priyanshoon" = home-manager.lib.homeManagerConfiguration {
+            pkgs = nixpkgs.legacyPackages."x86_64-linux";
+            extraSpecialArgs = { inherit inputs; };
+            modules = [ ./home-manager/home.nix ];
+        };
+    };
+}
