@@ -1,6 +1,7 @@
 {
 	imports = [
 		./shell.nix
+        ./pass.nix
         ./direnv.nix
         ./alacritty.nix
         ./stylix.nix
