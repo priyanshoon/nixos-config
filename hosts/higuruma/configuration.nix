@@ -54,12 +54,19 @@
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   programs.zsh.enable = true;
+  programs.obs-studio = { 
+      enable = true;
+      package = (pkgs.obs-studio.override {
+          cudaSupport = true;
+      });
+  };
   programs.uwsm.enable = true;
   programs.uwsm.waylandCompositors.niri = {
       binPath = "/run/current-system/sw/bin/niri-session";
       comment = "Niri (UWSM)";
       prettyName = "Niri";
   };
+
   users = {
 	defaultUserShell = pkgs.zsh;
       users."priyanshoon" = {

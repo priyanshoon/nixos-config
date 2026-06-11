@@ -1,5 +1,6 @@
 { config, ... }: {
     hardware.graphics.enable = true;
+    hardware.graphics.enable32Bit = true;
     hardware.nvidia = {
         modesetting.enable = true;
 
@@ -39,5 +40,5 @@
             nvidiaBusId = "PCI:1:0:0";
         };
     };
-    services.xserver.videoDrivers = [ "nvidia" ];
+    services.xserver.videoDrivers = [ "modesetting" "nvidia" ];
 }

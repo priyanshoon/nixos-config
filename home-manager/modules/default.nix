@@ -1,6 +1,7 @@
 {
 	imports = [
 		./shell.nix
+        ./direnv.nix
         ./alacritty.nix
         ./stylix.nix
 		./tmux.nix

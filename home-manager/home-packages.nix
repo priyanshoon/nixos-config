@@ -7,7 +7,6 @@
     # Desktop apps
     imv
     mpv
-    obs-studio
     signal-desktop
     shotcut
     obsidian
@@ -15,6 +14,7 @@
     gimp3
     pavucontrol
     kdePackages.dolphin
+    brave
     fuzzel
 
     # CLI utils
@@ -62,5 +62,6 @@
 
     # WM stuff
     libnotify
+    wl-mirror
   ];
 }
