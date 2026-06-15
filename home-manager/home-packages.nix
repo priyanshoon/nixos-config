@@ -17,7 +17,6 @@
     brave
     fuzzel
     ghidra-bin
-    ida-free
 
     # CLI utils
     brightnessctl
