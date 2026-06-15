@@ -16,6 +16,8 @@
     kdePackages.dolphin
     brave
     fuzzel
+    ghidra-bin
+    ida-free
 
     # CLI utils
     brightnessctl
@@ -34,6 +36,7 @@
     man-pages
     qmk
     fd
+    binutils
     usbutils
     playerctl
     ripgrep

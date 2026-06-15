@@ -1,6 +1,7 @@
 {
     imports = [
         ./niri.nix
+        ./wireshark.nix
         ./vm.nix
         ./gpg.nix
         ./audio.nix
