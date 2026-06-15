@@ -1,8 +1,9 @@
-{ pkgs, ... }: {
+{ inputs, pkgs, ... }: {
   nixpkgs.config.allowUnfree = true;
 
   home.packages = with pkgs; [
     # Packages in each category are sorted alphabetically
+    inputs.pwndbg.packages.${pkgs.system}.default 
 
     # Desktop apps
     imv
@@ -16,7 +17,7 @@
     kdePackages.dolphin
     brave
     fuzzel
-    ghidra-bin
+    binaryninja-free
 
     # CLI utils
     brightnessctl
@@ -35,6 +36,7 @@
     man-pages
     qmk
     fd
+    gdb
     binutils
     usbutils
     playerctl
@@ -58,6 +60,7 @@
     glibc
     cmake
     gnumake
+    openjdk
     typst
     gcc
     uv

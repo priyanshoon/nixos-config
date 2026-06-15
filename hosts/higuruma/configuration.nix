@@ -15,6 +15,10 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.trusted-users = [
+    "root"
+    "priyanshoon"
+  ];
 
   networking.hostName = "higuruma"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.

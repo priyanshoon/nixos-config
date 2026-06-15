@@ -2,8 +2,11 @@
     description = "uwu nixos config";
     
     nixConfig = {
-        extra-substituters = [ "https://noctalia.cachix.org" ];
-        extra-trusted-public-keys = [ "noctalia.cachix.org-1:pCOR47nnMEo5thcxNDtzWpOxNFQsBRglJzxWPp3dkU4=" ];
+        extra-substituters = [ "https://noctalia.cachix.org" "https://pwndbg.cachix.org" ];
+        extra-trusted-public-keys = [
+            "noctalia.cachix.org-1:pCOR47nnMEo5thcxNDtzWpOxNFQsBRglJzxWPp3dkU4=" 
+            "pwndbg.cachix.org-1:HhtIpP7j73SnuzLgobqqa8LVTng5Qi36sQtNt79cD3k="
+        ];
     };
 
     inputs = {
@@ -26,6 +29,7 @@
             inputs.nixpkgs.follows = "nixpkgs";
         };
 
+        pwndbg.url = "github:pwndbg/pwndbg";
         nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     };
 
