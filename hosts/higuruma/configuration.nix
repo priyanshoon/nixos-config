@@ -97,6 +97,9 @@
     firefox
     home-manager
 
+    nvidia-egl-wayland
+    egl-wayland
+
     xdg-desktop-portal-gtk
     xdg-desktop-portal-gnome
   ];

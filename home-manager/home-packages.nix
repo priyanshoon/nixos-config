@@ -8,7 +8,8 @@
     # Desktop apps
     imv
     mpv
-    wine
+    wineWow64Packages.stagingFull
+    winetricks
     mono
     signal-desktop
     shotcut
