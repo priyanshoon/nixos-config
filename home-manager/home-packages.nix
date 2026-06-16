@@ -9,7 +9,6 @@
     imv
     mpv
     wine
-    wine64
     mono
     signal-desktop
     shotcut
