@@ -18,6 +18,7 @@
     brave
     fuzzel
     binaryninja-free
+    radare2
 
     # CLI utils
     brightnessctl
