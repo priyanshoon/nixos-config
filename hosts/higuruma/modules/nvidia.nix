@@ -1,9 +1,8 @@
 { config, ... }: {
-    hardware.opengl = {
-        enable = true;
-        driSupport = true;
-        driSupport32Bit = true;
-    };
+    # hardware.opengl = {
+    #     enable = true;
+    #     driSupport32Bit = true;
+    # };
 
     hardware.graphics.enable = true;
     hardware.graphics.enable32Bit = true;

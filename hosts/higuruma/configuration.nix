@@ -97,11 +97,16 @@
     firefox
     home-manager
 
-    nvidia-egl-wayland
     egl-wayland
 
     xdg-desktop-portal-gtk
     xdg-desktop-portal-gnome
+
+    libx11
+    libxext
+    libxrender
+    libglibutil
+    libGLX
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
