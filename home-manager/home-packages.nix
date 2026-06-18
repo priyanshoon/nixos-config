@@ -56,6 +56,7 @@
     wlr-randr
     bluetui
     zip
+    rr
 
     # Coding stuff 
     nodejs
