@@ -3,7 +3,7 @@
         enable = true;
         theme = "vesper";
         settings = {
-            window.opacity = 0.80;
+            window.opacity = 0.90;
             # window.blur = true;
             colors = {
                 primary = {
