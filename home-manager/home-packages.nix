@@ -24,6 +24,7 @@
     radare2
 
     # CLI utils
+    unrar
     brightnessctl
     cliphist
     ffmpeg
