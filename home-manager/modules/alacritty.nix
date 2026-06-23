@@ -14,8 +14,8 @@
             };
             font.normal = {
                 # family = "AnonymicePro Nerd Font Mono";
-                family = "ComicShannsMono Nerd Font Mono";
-                # family = "Mononoki Nerd Font Mono";
+                # family = "ComicShannsMono Nerd Font Mono";
+                family = "Mononoki Nerd Font Mono";
                 # family = "SauceCodePro Nerd Font Mono";
                 style = "Regular";
             };

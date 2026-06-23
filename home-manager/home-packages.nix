@@ -13,7 +13,6 @@
     mono
     signal-desktop
     shotcut
-    obsidian
     evince
     gimp3
     pavucontrol
@@ -30,6 +29,7 @@
     ffmpeg
     ffmpegthumbnailer
     grimblast
+    android-tools
     htop
     ntfs3g
     mediainfo
