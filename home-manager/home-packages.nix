@@ -6,6 +6,7 @@
     inputs.pwndbg.packages.${pkgs.system}.default 
 
     # Desktop apps
+    zed-editor
     imv
     mpv
     wineWow64Packages.stagingFull
@@ -21,6 +22,7 @@
     fuzzel
     binaryninja-free
     radare2
+    obsidian
 
     # CLI utils
     unrar
@@ -64,6 +66,7 @@
     python312
     libgcc
     glibc
+    pnpm
     cmake
     gnumake
     openjdk
