@@ -30,32 +30,24 @@
                 pyrefly = {
                     enable = true;
                 };
-                # basedpyright = {
-                #     enable = true;
-                #     settings = {
-                #         plugins = {
-                #             ruff = {
-                #                 enable = true;
-                #             };
-                #         };
-                #     };
-                # };
 
                 ruff = {
                     enable = true;
                 };
-                # eslint.enable = true;
-                # emmet_ls = {
-                #     enable = true;
-                #     filetypes = [ "html" "astro" ];
-                # };
-                # ts_ls = {
-                #     enable = true;
-                #     filetypes = [ "typescript" "javascript" "tsx" "jsx" ];
-                # };
+
+                eslint.enable = true;
+                emmet_ls = {
+                    enable = true;
+                    filetypes = [ "html" "astro" ];
+                };
+                ts_ls = {
+                    enable = true;
+                    filetypes = [ "typescript" "javascript" "tsx" "jsx" ];
+                };
                 # phpactor = {
                 #     enable = true;
                 # };
+
                 # clangd = {
                 #     enable = true;
                 # };
@@ -74,7 +66,6 @@
                 #
                 astro = {
                     enable = true;
-                    package = null;
                     cmd = [ "astro-ls" "--stdio" ];
                     filetypes = [ "astro" ];
                 };
