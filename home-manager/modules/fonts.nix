@@ -17,7 +17,6 @@
         liberation_ttf
         roboto-mono
         roboto-serif
-        symbola
         source-code-pro
 		font-awesome
 		powerline-fonts
