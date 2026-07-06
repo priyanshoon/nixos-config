@@ -9,7 +9,7 @@
                 primary = {
                     # background = "#1D1C20";
                     background = "#101010";
-                    foreground = "#d5c4a1";
+                    foreground = "#bababa";
                 };
             };
             font.normal = {
