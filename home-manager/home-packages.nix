@@ -20,6 +20,7 @@
     # CLI utils
     unrar
     brightnessctl
+    apktool
     cliphist
     ffmpeg
     ffmpegthumbnailer
