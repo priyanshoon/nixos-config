@@ -2,10 +2,10 @@
     description = "uwu nixos config";
     
     nixConfig = {
-        extra-substituters = [ "https://noctalia.cachix.org" "https://pwndbg.cachix.org" ];
+        extra-substituters = [ "https://cache.nixos-cuda.org" "https://pwndbg.cachix.org" ];
         extra-trusted-public-keys = [
-            "noctalia.cachix.org-1:pCOR47nnMEo5thcxNDtzWpOxNFQsBRglJzxWPp3dkU4=" 
             "pwndbg.cachix.org-1:HhtIpP7j73SnuzLgobqqa8LVTng5Qi36sQtNt79cD3k="
+	    "cache.nixos-cuda.org:74DUi4Ye579gUqzH4ziL9IyiJBlDpMRn9MBN8oNan9M="
         ];
     };
 
@@ -19,27 +19,17 @@
             url = "github:nix-community/nixvim";
         };
 
-        noctalia = {
-            url = "github:noctalia-dev/noctalia/legacy-v4";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
-
-        stylix = {
-            url = "github:nix-community/stylix";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
-
         pwndbg.url = "github:pwndbg/pwndbg";
         nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     };
 
     outputs = inputs@{ nixpkgs, home-manager, ... }: {
         nixosConfigurations = {
-            higuruma = nixpkgs.lib.nixosSystem {
+            nixos = nixpkgs.lib.nixosSystem {
                 system = "x86_64-linux";
                 specialArgs = { inherit inputs; };
                 modules = [
-                    ./hosts/higuruma/configuration.nix
+                    ./hosts/nixos/configuration.nix
                 ];
             };
         };

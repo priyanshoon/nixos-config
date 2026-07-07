@@ -7,22 +7,14 @@
 
     # Desktop apps
     zed-editor
-    imv
     mpv
-    wineWow64Packages.stagingFull
-    winetricks
-    mono
     signal-desktop
     shotcut
-    evince
     gimp3
-    pavucontrol
-    kdePackages.dolphin
     brave
-    fuzzel
-    binaryninja-free
     radare2
     obsidian
+    ghidra-bin
 
     # CLI utils
     unrar
@@ -75,7 +67,6 @@
     uv
 
     # WM stuff
-    libnotify
     wl-mirror
   ];
 }
