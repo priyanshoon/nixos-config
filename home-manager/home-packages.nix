@@ -22,6 +22,8 @@
     fuzzel
     binaryninja-free
     radare2
+    burpsuite
+    ghidra-bin
     obsidian
 
     # CLI utils
