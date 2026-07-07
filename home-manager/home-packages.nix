@@ -15,6 +15,7 @@
     radare2
     obsidian
     ghidra-bin
+    burpsuite
 
     # CLI utils
     unrar
