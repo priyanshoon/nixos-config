@@ -42,7 +42,6 @@
     usbutils
     playerctl
     ripgrep
-    showmethekey
     udisks
     unzip
     jq
