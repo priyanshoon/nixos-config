@@ -1,8 +1,9 @@
 {
 	imports = [
 		./ld.nix
-        ./battery.nix
+        ./kde-connect.nix
         ./wireshark.nix
+        ./battery.nix
         ./vm.nix
 		./nvidia.nix
 	];
