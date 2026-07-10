@@ -2,6 +2,7 @@
 	imports = [
 		./shell.nix
 			./pass.nix
+            ./thunderbird.nix
 			./direnv.nix
 			./alacritty.nix
 			./tmux.nix
