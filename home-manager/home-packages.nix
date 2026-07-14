@@ -4,6 +4,7 @@
   home.packages = with pkgs; [
     # Packages in each category are sorted alphabetically
     inputs.pwndbg.packages.${pkgs.system}.default 
+    inputs.bootdev.packages.${pkgs.system}.bootdev
 
     # Desktop apps
     zed-editor
