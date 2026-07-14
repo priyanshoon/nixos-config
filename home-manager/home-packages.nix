@@ -16,6 +16,8 @@
     obsidian
     ghidra-bin
     burpsuite
+    libreoffice-qt
+    hunspell
 
     # CLI utils
     unrar
