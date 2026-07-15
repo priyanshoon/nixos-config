@@ -30,6 +30,9 @@
         btop.enable = true;
         bat = {
             enable = true;
+            settings = {
+                theme = "base16";
+            };
         };
 
 	starship = {
