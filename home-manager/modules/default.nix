@@ -1,6 +1,7 @@
 {
 	imports = [
 		./shell.nix
+        ./ghostty.nix
 			./pass.nix
             ./thunderbird.nix
 			./direnv.nix

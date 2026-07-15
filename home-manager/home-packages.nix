@@ -60,6 +60,7 @@
     # Coding stuff 
     nodejs
     python312
+    go
     libgcc
     glibc
     pnpm

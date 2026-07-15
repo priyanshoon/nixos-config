@@ -5,7 +5,7 @@
         extra-substituters = [ "https://cache.nixos-cuda.org" "https://pwndbg.cachix.org" ];
         extra-trusted-public-keys = [
             "pwndbg.cachix.org-1:HhtIpP7j73SnuzLgobqqa8LVTng5Qi36sQtNt79cD3k="
-	    "cache.nixos-cuda.org:74DUi4Ye579gUqzH4ziL9IyiJBlDpMRn9MBN8oNan9M="
+	        "cache.nixos-cuda.org:74DUi4Ye579gUqzH4ziL9IyiJBlDpMRn9MBN8oNan9M="
         ];
     };
 

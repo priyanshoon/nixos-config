@@ -1,15 +1,15 @@
 {
 	programs.alacritty = {
-        enable = true;
-        theme = "vesper";
+        enable = false;
+        theme = "kanagawa_wave";
         settings = {
             # window.opacity = 0.90;
             # window.blur = true;
             colors = {
                 primary = {
-                    # background = "#1D1C20";
-                    background = "#101010";
-                    foreground = "#bababa";
+                    background = "#181820";
+                    # background = "#101010";
+                    # foreground = "#bababa";
                 };
             };
             font.normal = {
