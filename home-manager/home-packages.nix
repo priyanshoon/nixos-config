@@ -3,8 +3,8 @@
 
   home.packages = with pkgs; [
     # Packages in each category are sorted alphabetically
-    inputs.pwndbg.packages.${pkgs.system}.default 
-    inputs.bootdev.packages.${pkgs.system}.bootdev
+    inputs.pwndbg.packages.${stdenv.hostPlatform.system}.default 
+    inputs.bootdev.packages.${stdenv.hostPlatform.system}.bootdev
 
     # Desktop apps
     zed-editor
