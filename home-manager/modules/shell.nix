@@ -30,7 +30,7 @@
         btop.enable = true;
         bat = {
             enable = true;
-            settings = {
+            config = {
                 theme = "base16";
             };
         };
