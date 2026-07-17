@@ -32,6 +32,7 @@
             enable = true;
             config = {
                 theme = "base16";
+                theme_background = true;
             };
         };
 
