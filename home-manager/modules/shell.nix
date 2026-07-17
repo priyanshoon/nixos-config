@@ -1,4 +1,4 @@
-{ config, ... }: {
+{ lib, config, ... }: {
     programs = {
         bash = {
             enable = true;
@@ -30,8 +30,8 @@
         btop = {
             enable = true;
             settings = {
-                color_theme = "kanagawa-wave";
-                theme_background = true;
+                color_theme = lib.mkForce "kanagawa-wave";
+                theme_background = lib.mkForce false;
             };
         };
         bat = {
