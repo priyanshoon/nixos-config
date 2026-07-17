@@ -5,6 +5,7 @@
     # Packages in each category are sorted alphabetically
     inputs.pwndbg.packages.${stdenv.hostPlatform.system}.default 
     inputs.bootdev.packages.${stdenv.hostPlatform.system}.bootdev
+    inputs.noctalia.packages.${stdenv.hostPlatform.system}.default
 
     # Desktop apps
     zed-editor

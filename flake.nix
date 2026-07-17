@@ -19,6 +19,11 @@
             url = "github:nix-community/nixvim";
         };
 
+        noctalia = {
+            url = "github:noctalia-dev/noctalia/legacy-v4";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
+
         pwndbg.url = "github:pwndbg/pwndbg";
         bootdev.url = "github:GMkonan/bootdev-cli-flake";
 
