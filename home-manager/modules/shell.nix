@@ -27,12 +27,17 @@
         zoxide.enable = true;
         fzf.enable = true;
         jq.enable = true;
-        btop.enable = true;
+        btop = {
+            enable = true;
+            settings = {
+                color_theme = "kanagawa-wave";
+                theme_background = true;
+            };
+        };
         bat = {
             enable = true;
             config = {
                 theme = "base16";
-                theme_background = true;
             };
         };
 
