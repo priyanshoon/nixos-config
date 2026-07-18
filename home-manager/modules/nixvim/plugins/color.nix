@@ -5,6 +5,10 @@
             settings = {
                 transparent = true;
                 dimInactive = true;
+                # theme = "dragon";
+                # background = {
+                #     dark = "dragon";
+                # };
             };
         };
        # colorschemes.vague = {

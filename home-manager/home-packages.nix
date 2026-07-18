@@ -10,6 +10,7 @@
     # Desktop apps
     zed-editor
     mpv
+    imv
     signal-desktop
     shotcut
     gimp3
@@ -20,6 +21,7 @@
     burpsuite
     libreoffice-qt
     hunspell
+    ida-free
 
     # CLI utils
     unrar
