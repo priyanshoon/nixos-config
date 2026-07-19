@@ -3,6 +3,7 @@
     enable = true;
     package = pkgs.pass.withExtensions (exts: [
       exts.pass-import
+      exts.pass-otp
     ]);
   };
 }
