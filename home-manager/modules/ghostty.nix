@@ -7,7 +7,7 @@
             font-family = lib.mkForce "Mononoki Nerd Font";
             cursor-style = "block";
             font-size = 16;
-            background-opacity = 0.93;
+            background-opacity = 0.88;
         };
     };
 }
