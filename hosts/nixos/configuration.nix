@@ -84,6 +84,11 @@
 	  };
   };
 
+  fileSystems."/data" = {
+      device = "/dev/disk/by-uuid/13850abc-c8a9-46c7-a006-0a721f31838f";
+      fsType = "ext4";
+  };
+
   # Install firefox.
   programs.firefox.enable = true;
 
