@@ -2,8 +2,8 @@
     programs.ghostty = {
         enable = true;
         settings = {
-            background = "#000000";
-            theme = "Kanagawa Wave";
+            # background = "#000000";
+            theme = "Vague";
             font-family = lib.mkForce "Mononoki Nerd Font";
             cursor-style = "block";
             font-size = 16;
