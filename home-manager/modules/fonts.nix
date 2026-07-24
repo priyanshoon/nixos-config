@@ -20,5 +20,7 @@
 		font-awesome
 		powerline-fonts
 		powerline-symbols
+        corefonts
+        vista-fonts
 	];	
 }
