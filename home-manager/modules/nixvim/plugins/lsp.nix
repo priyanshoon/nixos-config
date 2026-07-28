@@ -121,8 +121,8 @@
 
         extraConfigLua = ''
             vim.diagnostic.config({
-                    virtual_text = false,  -- must be disabled!
-                    underline = false,
+                    virtual_text = true,  -- must be disabled!
+                    underline = true,
                     signs = true,
                     })
         '';
