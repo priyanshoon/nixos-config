@@ -26,6 +26,7 @@
     # CLI utils
     unrar
     brightnessctl
+    yt-dlp
     apktool
     cliphist
     ffmpeg
