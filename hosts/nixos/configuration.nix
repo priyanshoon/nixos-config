@@ -96,10 +96,25 @@
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
+    opentabletdriver
 	vim
 	git
 	pass
 	home-manager
+
+    libmtp
+    go-mtpfs
+    doublecmd
+    rar
+
+    qbittorrent
+    docker-compose
+
+    openssl
+    openssl.dev
+
+    telegram-desktop
+    ghostty
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

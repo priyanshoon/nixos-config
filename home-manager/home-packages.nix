@@ -42,7 +42,6 @@
     opencode
     man-db
     man-pages
-    qmk
     fd
     gdb
     binutils

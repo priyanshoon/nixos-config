@@ -1,6 +1,7 @@
 {
 	imports = [
 		./ld.nix
+        ./otd.nix
         ./niri.nix
         ./kde-connect.nix
         ./wireshark.nix
