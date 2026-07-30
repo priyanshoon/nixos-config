@@ -94,6 +94,8 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+  services.gvfs.enable = true;
+  services.udisks2.enable = true;
 
   environment.systemPackages = with pkgs; [
     opentabletdriver
