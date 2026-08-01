@@ -21,7 +21,6 @@
     burpsuite
     libreoffice-qt
     hunspell
-    ida-free
 
     # CLI utils
     unrar
