@@ -25,7 +25,7 @@
         };
 
         pwndbg.url = "github:pwndbg/pwndbg";
-        bootdev.url = "github:GMkonan/bootdev-cli-flake";
+        bootdev.url = "github:priyanshoon/bootdev-cli-flake";
 
         nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     };

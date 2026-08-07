@@ -5,15 +5,15 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1780463827,
-        "narHash": "sha256-EAHb6w21spZWr4Bc/rQj0yXz0CPPoQKhuiRhzdir4t4=",
-        "owner": "GMkonan",
+        "lastModified": 1786125594,
+        "narHash": "sha256-z5hAAGt4zP6jQkM4s8+8RXoO6IbofxNo5D4719Gjqvk=",
+        "owner": "priyanshoon",
         "repo": "bootdev-cli-flake",
-        "rev": "a7ca733715a3a77efbda350f34f9a8a05a2b150b",
+        "rev": "5cfe1e8709c422bb1b28591e373e8cba9c193996",
         "type": "github"
       },
       "original": {
-        "owner": "GMkonan",
+        "owner": "priyanshoon",
         "repo": "bootdev-cli-flake",
         "type": "github"
       }
