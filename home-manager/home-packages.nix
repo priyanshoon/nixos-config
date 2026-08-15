@@ -2,12 +2,11 @@
   nixpkgs.config.allowUnfree = true;
 
   home.packages = with pkgs; [
-    # Packages in each category are sorted alphabetically
+# flake inputs packages
     inputs.bootdev.packages.${stdenv.hostPlatform.system}.bootdev
     inputs.llm-agents.packages.${stdenv.hostPlatform.system}.pi
 
     # Desktop apps
-    zed-editor
     mpv
     imv
     shotcut
@@ -53,20 +52,16 @@
 
     # Coding stuff 
     nodejs
-    python312
+    python313
     go
     libgcc
     glibc
     pnpm
-    cmake
     gnumake
-    openjdk
+    just
     typst
     gcc
     uv
     jetbrains.idea
-
-    # WM stuff
-    wl-mirror
   ];
 }
