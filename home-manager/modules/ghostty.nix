@@ -5,7 +5,7 @@
             # background = "#000000";
             theme = "Vague";
             # background-image = "/home/priyanshoon/Pictures/Wallpapers/wallhaven-45gz65_1920x1080.png";
-            font-family = lib.mkForce "Consolas";
+            font-family = lib.mkForce "Mononoki Nerd Font";
             cursor-style = "block";
             font-size = 16;
             # background-image-opacity = 0.8;

@@ -3,24 +3,17 @@
 
   home.packages = with pkgs; [
     # Packages in each category are sorted alphabetically
-    inputs.pwndbg.packages.${stdenv.hostPlatform.system}.default 
     inputs.bootdev.packages.${stdenv.hostPlatform.system}.bootdev
-    inputs.noctalia.packages.${stdenv.hostPlatform.system}.default
+    inputs.llm-agents.packages.${stdenv.hostPlatform.system}.pi
 
     # Desktop apps
     zed-editor
     mpv
     imv
-    signal-desktop
     shotcut
     gimp3
     brave
-    radare2
     obsidian
-    ghidra-bin
-    burpsuite
-    libreoffice-qt
-    hunspell
 
     # CLI utils
     unrar
@@ -38,7 +31,6 @@
     microfetch
     irssi
     inetutils
-    opencode
     man-db
     man-pages
     fd
@@ -72,6 +64,7 @@
     typst
     gcc
     uv
+    jetbrains.idea
 
     # WM stuff
     wl-mirror

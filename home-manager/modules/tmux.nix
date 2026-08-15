@@ -44,10 +44,13 @@ in {
 		bind -T copy-mode-vi y send-keys -X copy-pipe-and-cancel 'xclip -in -selection clipboard'
 		bind r source-file $XDG_CONFIG_HOME/tmux/tmux.conf \; display-message "tmux.conf reloaded"
 
+        set -g extended-keys-format csi-u
+
 		bind -r h select-pane -L
 		bind -r j select-pane -D
 		bind -r k select-pane -U
 		bind -r l select-pane -R
+        set -g extended-keys on
 
         bind-key C-t run-shell "tmux neww tmux-sessionizer"
 		'';

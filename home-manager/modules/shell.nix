@@ -12,6 +12,7 @@
 
             shellAliases = {
                 ls = "ls -lah --color";
+                vippass="PASSWORD_STORE_DIR=$HOME/personal/.vip-password pass";
                 cls = "clear";
                 tmux = "tmux -u";
                 nix-clean = "sudo nix-collect-garbage --delete-older-than 2d --cores 16 && nix-collect-garbage --delete-older-than 2d --cores 16";

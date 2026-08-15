@@ -103,6 +103,7 @@
 	git
 	pass
 	home-manager
+    proton-vpn
 
     libmtp
     go-mtpfs
