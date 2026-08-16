@@ -9,7 +9,8 @@
             cursor-style = "block";
             font-size = 16;
             # background-image-opacity = 0.8;
-            # background-opacity = 0.9;
+            background-opacity = 0.9;
+            background-blur = true;
         };
     };
 }

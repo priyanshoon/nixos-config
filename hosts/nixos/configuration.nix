@@ -118,6 +118,10 @@
 
     telegram-desktop
     ghostty
+
+    libnotify
+    xdg-desktop-portal-gtk
+    xdg-desktop-portal-hyprland
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

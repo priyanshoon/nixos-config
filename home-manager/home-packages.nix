@@ -63,5 +63,13 @@
     gcc
     uv
     jetbrains.idea
+
+# wm stuff
+
+    waybar
+    playerctl
+    mako
+    libnotify
+    hyprpaper
   ];
 }

@@ -1,0 +1,41 @@
+
+### Nord Theme for mako ###
+
+# Font
+font=Mononoki Nerd Font 10
+
+# Layout
+padding=10
+margin=10
+border-size=2
+border-radius=6
+anchor=top-right
+width=320
+
+# Icons
+icons=1
+max-icon-size=32
+
+# Default colors
+background-color=#2E3440
+text-color=#ECEFF4
+border-color=#88C0D0
+
+default-timeout=0
+
+# Low urgency
+[urgency=low]
+border-color=#5E81AC
+background-color=#2E3440
+text-color=#E5E9F0
+
+# Normal urgency
+[urgency=normal]
+border-color=#88C0D0
+
+# Critical urgency
+[urgency=critical]
+background-color=#3B4252
+border-color=#BF616A
+text-color=#ECEFF4
+
