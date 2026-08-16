@@ -47,15 +47,15 @@
   },
   "pulseaudio#source": {
     "format": "{icon} {volume}%",
-    "format-muted": "󰝟",
+    "format-muted": "󰝟 ",
     "tooltip": true,
     "tooltip-format": "Volume: {volume}%",
     "format-icons": {
       "headphone": "",
       "default": [
         "",
-        "",
-        ""
+        " ",
+        " "
       ],
     },
     "scroll-step": 5,
