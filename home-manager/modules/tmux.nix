@@ -1,7 +1,31 @@
 { pkgs, ... }: 
 let
-    tmux-sessionizer = pkgs.writeScriptBin "tmux-sessionizer" ''
+    tmux-personal = pkgs.writeScriptBin "tmux-personal" ''
     selected=$(find ~/personal -mindepth 1 -maxdepth 1 -type d | fzf)
+    if [[ -z "$selected" ]]; then
+        exit 0
+    fi
+
+    selected_name=$(basename $selected | tr ":,. ", "____")
+
+    switch_to() {
+        if [[ -z "$TMUX" ]]; then
+            tmux -u attach-session -t $selected_name
+        else
+            tmux -u switch-client -t $selected_name
+        fi
+    }
+
+    if tmux has-session -t=$selected_name 2> /dev/null; then
+        switch_to
+    else
+        tmux -u new-session -ds $selected_name -c $selected
+        switch_to
+    fi
+    '';
+
+    tmux-work = pkgs.writeScriptBin "tmux-work" ''
+    selected=$(find ~/workspace -mindepth 1 -maxdepth 1 -type d | fzf)
     if [[ -z "$selected" ]]; then
         exit 0
     fi
@@ -25,8 +49,14 @@ let
     '';
 in {
     home.packages = [
-        tmux-sessionizer
+        tmux-personal
+        tmux-work
     ];
+
+    home.shellAliases = {
+        tp = "tmux-personal";
+        tw = "tmux-work";
+    };
 
 	programs.tmux = {
 		enable = true;
