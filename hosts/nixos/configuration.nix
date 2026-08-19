@@ -1,5 +1,4 @@
-{ config, pkgs, ... }:
-
+{ inputs, config, pkgs, ... }:
 {
   imports =
     [ # Include the results of the hardware scan.
@@ -97,6 +96,7 @@
   services.gvfs.enable = true;
   services.udisks2.enable = true;
 
+  nixpkgs.overlays = [inputs.helium.overlays.default];
   environment.systemPackages = with pkgs; [
     opentabletdriver
 	vim
@@ -122,6 +122,8 @@
     libnotify
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
+
+    helium
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

@@ -17,7 +17,9 @@
         nixvim = {
             url = "github:nix-community/nixvim";
         };
-        
+
+        helium.url = "github:oxcl/nix-flake-helium-browser";
+        helium.inputs.nixpkgs.follows = "nixpkgs";
         bootdev.url = "github:priyanshoon/bootdev-cli-flake";
         llm-agents.url = "github:numtide/llm-agents.nix";
         nixos-hardware.url = "github:NixOS/nixos-hardware/master";
