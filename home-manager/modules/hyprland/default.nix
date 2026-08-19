@@ -1,8 +1,7 @@
 { pkgs, ... }:
 let 
     clipping = pkgs.writeScriptBin "clipping" ''
-    cliphist list | wofi -dmenu | cliphist decode | wl-copy && \
-      notify-send "Clipboard" "Item copied to clipboard"
+    cliphist list | wofi -dmenu | cliphist decode | wl-copy
     '';
 in {
     home.packages = [
