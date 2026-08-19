@@ -14,7 +14,6 @@
         ./nixvim
         ./git.nix
         ./fonts.nix
-        ./zed.nix
 	];
 }
 
