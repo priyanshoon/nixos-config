@@ -4,6 +4,7 @@
         ./otd.nix
         # ./niri.nix
         ./kde-connect.nix
+        ./helium.nix
         ./hyprland.nix
         ./wireshark.nix
         ./battery.nix
