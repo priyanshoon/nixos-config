@@ -12,6 +12,7 @@
 
             shellAliases = {
                 ls = "ls -lah --color";
+                cd = "z";
                 vippass="PASSWORD_STORE_DIR=$HOME/personal/.vip-password pass";
                 cls = "clear";
                 tmux = "tmux -u";
