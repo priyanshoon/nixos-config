@@ -35,7 +35,6 @@
                     enable = true;
                 };
 
-                eslint.enable = true;
                 emmet_ls = {
                     enable = true;
                     filetypes = [ "html" "astro" ];
