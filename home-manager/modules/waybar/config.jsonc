@@ -6,9 +6,6 @@
     "hyprland/workspaces",
 
   ],
-  // "modules-center": [
-  //   "hyprland/window"
-  // ],
   "modules-right": [
     "group/expand",
     "tray",
@@ -20,13 +17,6 @@
   ],
   "reload_style_on_change": true,
 
-  // "hyprland/window": {
-  //     "format": "{class}  {title}",
-  //     "icon": false,
-  //     "max-length": 50,
-  //     "separate-outputs": true,
-  //     "tooltip": false
-  // },
   "hyprland/workspaces": {
       "format": "{icon}",
       "tooltip": false,
@@ -47,15 +37,15 @@
   },
   "pulseaudio#source": {
     "format": "{icon} {volume}%",
-    "format-muted": "󰝟 ",
+    "format-muted": "󰝟",
     "tooltip": true,
     "tooltip-format": "Volume: {volume}%",
     "format-icons": {
       "headphone": "",
       "default": [
         "",
-        " ",
-        " "
+        "",
+        ""
       ],
     },
     "scroll-step": 5,
