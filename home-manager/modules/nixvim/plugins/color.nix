@@ -2,7 +2,7 @@
     programs.nixvim = {
         colorschemes.catppuccin = {
             enable = true;
-            callSetup = {
+            settings = {
                 flavour = "mocha";
                 background = {
                     dark = "mocha";
