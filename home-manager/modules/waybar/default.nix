@@ -4,4 +4,3 @@
     "waybar/style.css".source = ./style.css;
   };
 }
-

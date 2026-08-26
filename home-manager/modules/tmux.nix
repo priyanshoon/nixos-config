@@ -1,6 +1,6 @@
-{ pkgs, ... }: 
+{ pkgs, ... }:
 let
-    tmux-personal = pkgs.writeScriptBin "tmux-personal" ''
+  tmux-personal = pkgs.writeScriptBin "tmux-personal" ''
     selected=$(find ~/personal -mindepth 1 -maxdepth 1 -type d | fzf)
     if [[ -z "$selected" ]]; then
         exit 0
@@ -22,9 +22,9 @@ let
         tmux -u new-session -ds $selected_name -c $selected
         switch_to
     fi
-    '';
+  '';
 
-    tmux-work = pkgs.writeScriptBin "tmux-work" ''
+  tmux-work = pkgs.writeScriptBin "tmux-work" ''
     selected=$(find ~/workspace -mindepth 1 -maxdepth 1 -type d | fzf)
     if [[ -z "$selected" ]]; then
         exit 0
@@ -46,43 +46,44 @@ let
         tmux -u new-session -ds $selected_name -c $selected
         switch_to
     fi
-    '';
-in {
-    home.packages = [
-        tmux-personal
-        tmux-work
-    ];
+  '';
+in
+{
+  home.packages = [
+    tmux-personal
+    tmux-work
+  ];
 
-    home.shellAliases = {
-        tp = "tmux-personal";
-        tw = "tmux-work";
-    };
+  home.shellAliases = {
+    tp = "tmux-personal";
+    tw = "tmux-work";
+  };
 
-	programs.tmux = {
-		enable = true;
-		baseIndex = 1;
-		escapeTime = 0;
-		keyMode = "vi";
-		terminal = "tmux-256color";
-		extraConfig = ''
-        set -as terminal-overrides ',*:sitm=\E[3m'
+  programs.tmux = {
+    enable = true;
+    baseIndex = 1;
+    escapeTime = 0;
+    keyMode = "vi";
+    terminal = "tmux-256color";
+    extraConfig = ''
+              set -as terminal-overrides ',*:sitm=\E[3m'
 
-		unbind C-b
-		set-option -g prefix C-a
-		bind-key C-a send-prefix
-		bind -T copy-mode-vi v send-keys -X begin-selection
-		bind -T copy-mode-vi y send-keys -X copy-pipe-and-cancel 'xclip -in -selection clipboard'
-		bind r source-file $XDG_CONFIG_HOME/tmux/tmux.conf \; display-message "tmux.conf reloaded"
+      		unbind C-b
+      		set-option -g prefix C-a
+      		bind-key C-a send-prefix
+      		bind -T copy-mode-vi v send-keys -X begin-selection
+      		bind -T copy-mode-vi y send-keys -X copy-pipe-and-cancel 'xclip -in -selection clipboard'
+      		bind r source-file $XDG_CONFIG_HOME/tmux/tmux.conf \; display-message "tmux.conf reloaded"
 
-        set -g extended-keys-format csi-u
+              set -g extended-keys-format csi-u
 
-		bind -r h select-pane -L
-		bind -r j select-pane -D
-		bind -r k select-pane -U
-		bind -r l select-pane -R
-        set -g extended-keys on
+      		bind -r h select-pane -L
+      		bind -r j select-pane -D
+      		bind -r k select-pane -U
+      		bind -r l select-pane -R
+              set -g extended-keys on
 
-        bind-key C-t run-shell "tmux neww tmux-sessionizer"
-		'';
-	};
+              bind-key C-t run-shell "tmux neww tmux-sessionizer"
+      		'';
+  };
 }

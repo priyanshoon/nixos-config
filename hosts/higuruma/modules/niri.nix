@@ -1,5 +1,5 @@
 {
-    programs.niri = {
-        enable = false;
-    };
+  programs.niri = {
+    enable = false;
+  };
 }

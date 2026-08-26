@@ -1,15 +1,23 @@
-{ inputs, config, pkgs, ... }:
 {
-  imports =
-    [ # Include the results of the hardware scan.
-        ./hardware-configuration.nix
-	    ./modules
-    ];
+  inputs,
+  config,
+  pkgs,
+  ...
+}:
+{
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+    ./modules
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
 
   hardware.bluetooth.enable = true;
 
@@ -35,10 +43,9 @@
   };
 
   nix.settings.trusted-users = [
-	"root"
-	"priyanshoon"
+    "root"
+    "priyanshoon"
   ];
-
 
   services.xserver.enable = true;
   services.displayManager.sddm.enable = true;
@@ -66,26 +73,36 @@
   services.xserver.libinput.enable = true;
 
   programs.zsh.enable = true;
-  programs.obs-studio = { 
-	  enable = true;
-	  package = (pkgs.obs-studio.override {
-			  cudaSupport = true;
-			  });
+  programs.obs-studio = {
+    enable = true;
+    package = (
+      pkgs.obs-studio.override {
+        cudaSupport = true;
+      }
+    );
   };
 
   users = {
-	  defaultUserShell = pkgs.zsh;
-	  users."priyanshoon" = {
-		  isNormalUser = true;
-		  description = "Priyanshu Gupta";
-		  extraGroups = [ "networkmanager" "wheel" "video" "audio" "libvirtd" "kvm" "wireshark" ];
-		  packages = with pkgs; [ kdePackages.kate ];
-	  };
+    defaultUserShell = pkgs.zsh;
+    users."priyanshoon" = {
+      isNormalUser = true;
+      description = "Priyanshu Gupta";
+      extraGroups = [
+        "networkmanager"
+        "wheel"
+        "video"
+        "audio"
+        "libvirtd"
+        "kvm"
+        "wireshark"
+      ];
+      packages = with pkgs; [ kdePackages.kate ];
+    };
   };
 
   fileSystems."/data" = {
-      device = "/dev/disk/by-uuid/13850abc-c8a9-46c7-a006-0a721f31838f";
-      fsType = "ext4";
+    device = "/dev/disk/by-uuid/13850abc-c8a9-46c7-a006-0a721f31838f";
+    fsType = "ext4";
   };
 
   # Install firefox.
@@ -98,10 +115,10 @@
 
   environment.systemPackages = with pkgs; [
     opentabletdriver
-	vim
-	git
-	pass
-	home-manager
+    vim
+    git
+    pass
+    home-manager
     proton-vpn
 
     libmtp
@@ -127,8 +144,8 @@
   # started in user sessions.
   # programs.mtr.enable = true;
   programs.gnupg.agent = {
-     enable = true;
-     enableSSHSupport = true;
+    enable = true;
+    enableSSHSupport = true;
   };
 
   # List services that you want to enable:

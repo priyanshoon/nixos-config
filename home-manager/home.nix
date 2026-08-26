@@ -1,12 +1,12 @@
 {
-    imports = [
-        ./modules
-        ./home-packages.nix
-    ];
+  imports = [
+    ./modules
+    ./home-packages.nix
+  ];
 
-    home = {
-        username = "priyanshoon";
-        homeDirectory = "/home/priyanshoon";
-        stateVersion = "26.05";
-    };
+  home = {
+    username = "priyanshoon";
+    homeDirectory = "/home/priyanshoon";
+    stateVersion = "26.05";
+  };
 }

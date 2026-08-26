@@ -2,7 +2,7 @@
   nixpkgs.config.allowUnfree = true;
 
   home.packages = with pkgs; [
-# flake inputs packages
+    # flake inputs packages
     inputs.bootdev.packages.${stdenv.hostPlatform.system}.bootdev
     inputs.llm-agents.packages.${stdenv.hostPlatform.system}.pi
 
@@ -50,7 +50,7 @@
     zip
     rr
 
-    # Coding stuff 
+    # Coding stuff
     nodejs
     python313
     go
@@ -64,7 +64,7 @@
     uv
     jetbrains.idea
 
-# wm stuff
+    # wm stuff
 
     waybar
     playerctl

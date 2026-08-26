@@ -1,14 +1,14 @@
 {
-	imports = [
-		./ld.nix
-        ./otd.nix
-        # ./niri.nix
-        ./kde-connect.nix
-        ./helium.nix
-        ./hyprland.nix
-        ./wireshark.nix
-        ./battery.nix
-        ./vm.nix
-		./nvidia.nix
-	];
+  imports = [
+    ./ld.nix
+    ./otd.nix
+    # ./niri.nix
+    ./kde-connect.nix
+    ./helium.nix
+    ./hyprland.nix
+    ./wireshark.nix
+    ./battery.nix
+    ./vm.nix
+    ./nvidia.nix
+  ];
 }

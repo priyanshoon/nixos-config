@@ -3,4 +3,3 @@
     "mako/config".source = ./config;
   };
 }
-

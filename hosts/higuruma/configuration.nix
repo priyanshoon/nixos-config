@@ -1,14 +1,17 @@
 { config, pkgs, ... }:
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-      ./modules
-    ];
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+    ./modules
+  ];
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
   nix.settings.trusted-users = [
     "root"
     "priyanshoon"
@@ -21,10 +24,10 @@
   networking.networkmanager.enable = true;
 
   hardware.bluetooth.enable = true;
-#  services.power-profiles-daemon.enable = true;
+  #  services.power-profiles-daemon.enable = true;
   services.upower.enable = true;
 
-#TODO: I don't know what the fuck is this, will review later
+  #TODO: I don't know what the fuck is this, will review later
   services.xserver.updateDbusEnvironment = true;
 
   # Set your time zone.
@@ -45,30 +48,39 @@
     LC_TIME = "en_IN";
   };
 
-
   # Define a user account. Don't forget to set a password with ‘passwd’.
   programs.zsh.enable = true;
-  programs.obs-studio = { 
-      enable = true;
-      package = (pkgs.obs-studio.override {
-          cudaSupport = true;
-      });
+  programs.obs-studio = {
+    enable = true;
+    package = (
+      pkgs.obs-studio.override {
+        cudaSupport = true;
+      }
+    );
   };
   programs.uwsm.enable = true;
   programs.uwsm.waylandCompositors.niri = {
-      binPath = "/run/current-system/sw/bin/niri-session";
-      comment = "Niri (UWSM)";
-      prettyName = "Niri";
+    binPath = "/run/current-system/sw/bin/niri-session";
+    comment = "Niri (UWSM)";
+    prettyName = "Niri";
   };
 
   users = {
-	defaultUserShell = pkgs.zsh;
-      users."priyanshoon" = {
-          isNormalUser = true;
-          description = "priyanshu";
-          extraGroups = [ "networkmanager" "wheel" "video" "audio" "libvirtd" "kvm" "wireshark" ];
-          packages = with pkgs; [];
-      };
+    defaultUserShell = pkgs.zsh;
+    users."priyanshoon" = {
+      isNormalUser = true;
+      description = "priyanshu";
+      extraGroups = [
+        "networkmanager"
+        "wheel"
+        "video"
+        "audio"
+        "libvirtd"
+        "kvm"
+        "wireshark"
+      ];
+      packages = with pkgs; [ ];
+    };
   };
 
   # auto login
@@ -80,8 +92,8 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-  #  wget
+    #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    #  wget
     vim
     firefox
     home-manager

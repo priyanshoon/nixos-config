@@ -1,23 +1,23 @@
 {
-    programs.nixvim = {
-        colorschemes.catppuccin = {
-            enable = true;
-            settings = {
-                flavour = "mocha";
-                background = {
-                    dark = "mocha";
-                };
-                transparent_background = true;
-                dim_inactive = {
-                    enabled = true;
-                };
-            };
+  programs.nixvim = {
+    colorschemes.catppuccin = {
+      enable = true;
+      settings = {
+        flavour = "mocha";
+        background = {
+          dark = "mocha";
         };
-       # colorschemes.vague = {
-       #     enable = true;
-       #     settings = {
-       #         transparent = true;
-       #     };
-       # };
+        transparent_background = true;
+        dim_inactive = {
+          enabled = true;
+        };
+      };
     };
+    # colorschemes.vague = {
+    #     enable = true;
+    #     settings = {
+    #         transparent = true;
+    #     };
+    # };
+  };
 }
