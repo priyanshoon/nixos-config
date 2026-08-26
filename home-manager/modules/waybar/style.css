@@ -26,12 +26,11 @@
 * {
     all: unset;
     font-family: "Mononoki Nerd Font";
-    font-size: 14px;
+    font-size: 12px;
 }
 
 window#waybar {
     background-color: @base;
-    border-bottom: 1px solid @teal;
 }
 
 tooltip {
@@ -74,23 +73,23 @@ menu menuitem:hover {
 #memory,
 #tray {
     color: @text;
-    padding: 4px 12px;
-    margin: 4px 3px;
-    border-radius: 10px;
+    padding: 2px 8px;
+    margin: 2px;
+    border-radius: 8px;
 }
 
 /* ---------- workspaces ---------- */
 
 #workspaces {
-    padding: 2px 6px;
+    padding: 1px 4px;
 }
 
 #workspaces button {
-    padding: 2px 8px;
-    margin: 2px;
-    border-radius: 8px;
+    padding: 1px 5px;
+    margin: 1px;
+    border-radius: 6px;
     color: @subtext1;
-    font-size: 20px;
+    font-size: 14px;
     transition: all 0.2s ease-in-out;
 }
 
@@ -166,7 +165,7 @@ menu menuitem:hover {
 /* ---------- tray ---------- */
 
 #tray {
-    padding: 2px 10px;
+    padding: 1px 6px;
 }
 
 #tray > .passive {

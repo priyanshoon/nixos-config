@@ -32,7 +32,7 @@
   "tray": {
     "format": "{icon}",
     "tooltip": true,
-    "icon-size": 18,
+    "icon-size": 14,
     "spacing": 0
   },
   "pulseaudio#source": {
