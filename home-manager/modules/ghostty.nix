@@ -2,7 +2,7 @@
   programs.ghostty = {
     enable = true;
     settings = {
-      # background = "#000000";
+      background = "#12121B";
       theme = "Catppuccin Mocha";
       # background-image = "/home/priyanshoon/Pictures/Wallpapers/wallhaven-45gz65_1920x1080.png";
       font-family = lib.mkForce "Mononoki Nerd Font";
