@@ -83,7 +83,7 @@ in
       		bind -r l select-pane -R
               set -g extended-keys on
 
-              bind-key C-t run-shell "tmux neww ${pkgs.tmux-personal}"
+              bind-key C-t run-shell "tmux neww tmux-personal"
       		'';
   };
 }
