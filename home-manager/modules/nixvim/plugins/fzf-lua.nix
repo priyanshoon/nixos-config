@@ -4,7 +4,7 @@
       enable = true;
       keymaps = {
         "<leader>pf" = "live_grep";
-        "<leader>ff" = "files";
+        "<leader>f" = "files";
         "<C-g>" = "git_files";
       };
     };
