@@ -7,6 +7,6 @@
   programs.nixvim = {
     enable = true;
     defaultEditor = true;
-    plugins.web-devicons.enable = false;
+    plugins.web-devicons.enable = true;
   };
 }
