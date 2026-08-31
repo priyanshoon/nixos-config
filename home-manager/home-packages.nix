@@ -9,7 +9,6 @@
     # Desktop apps
     mpv
     imv
-    shotcut
     gimp3
     brave
     obsidian

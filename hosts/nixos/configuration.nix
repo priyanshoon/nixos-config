@@ -131,6 +131,7 @@
     openssl.dev
 
     telegram-desktop
+    kdePackages.kdenlive
     ghostty
 
     libnotify
