@@ -3,7 +3,7 @@
     {
       mode = "n";
       key = "<leader>yv";
-      action.__raw = "vim.cmd.Ex";
+      action = "<cmd>Oil<CR>";
       options = {
         desc = "File navigator";
       };
@@ -120,6 +120,15 @@
         silent = true;
         noremap = true;
       };
+    }
+
+    {
+        mode = "n";
+        key = "<leader>lf";
+        action.__raw = "vim.lsp.buf.format";
+        options = {
+            desc = "Format Current Buffer";
+        };
     }
   ];
 }

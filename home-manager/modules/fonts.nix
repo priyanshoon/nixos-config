@@ -5,6 +5,8 @@
 
   home.packages = with pkgs; [
     nerd-fonts.mononoki
+    nerd-fonts.fira-code
+    nerd-fonts.geist-mono
     nerd-fonts.comic-shanns-mono
     dejavu_fonts
     noto-fonts

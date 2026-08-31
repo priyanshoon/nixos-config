@@ -13,7 +13,7 @@
     gimp3
     brave
     obsidian
-    aseprite 
+    aseprite
 
     # CLI utils
     unrar
