@@ -123,12 +123,12 @@
     }
 
     {
-        mode = "n";
-        key = "<leader>lf";
-        action.__raw = "vim.lsp.buf.format";
-        options = {
-            desc = "Format Current Buffer";
-        };
+      mode = "n";
+      key = "<leader>lf";
+      action.__raw = "vim.lsp.buf.format";
+      options = {
+        desc = "Format Current Buffer";
+      };
     }
   ];
 }

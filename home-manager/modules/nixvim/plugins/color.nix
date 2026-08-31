@@ -1,12 +1,12 @@
 {
   programs.nixvim = {
-      colorschemes.everforest = {
-          enable = true;
-          settings = {
-            transparent_background = 1;
-            dim_inactive_windows = 1;
-          };
+    colorschemes.everforest = {
+      enable = true;
+      settings = {
+        transparent_background = 1;
+        dim_inactive_windows = 1;
       };
+    };
     # colorschemes.gruvbox = {
     #   enable = true;
     #   settings = {
