@@ -49,6 +49,7 @@
     bluetui
     zip
     rr
+    jujutsu
 
     # Coding stuff
     nodejs
@@ -65,7 +66,6 @@
     jetbrains.idea
 
     # wm stuff
-
     waybar
     playerctl
     mako
