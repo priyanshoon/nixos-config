@@ -9,6 +9,7 @@
     # Desktop apps
     mpv
     imv
+    vlc
     gimp3
     brave
     obsidian
