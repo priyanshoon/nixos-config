@@ -1,6 +1,7 @@
 {
   imports = [
     ./shell.nix
+    ./anki.nix
     ./hyprland
     ./mako
     ./ghostty.nix
