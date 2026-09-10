@@ -1,6 +1,7 @@
 {
   imports = [
     ./shell.nix
+    ./zed.nix
     ./anki.nix
     ./hyprland
     ./mako
@@ -10,7 +11,6 @@
     ./pass.nix
     ./thunderbird.nix
     ./direnv.nix
-    ./alacritty.nix
     ./tmux.nix
     ./nixvim
     ./git.nix
