@@ -28,7 +28,7 @@
 }
 
 window#waybar {
-    background-color: @base;
+    background-color: rgba(39, 46, 51, 0.88);
 }
 
 tooltip {
@@ -96,6 +96,7 @@ menu menuitem:hover {
 }
 
 #workspaces button.active {
+    background-color: rgba(65, 75, 80, 0.88);
     color: @mauve;
     font-weight: bold;
 }
