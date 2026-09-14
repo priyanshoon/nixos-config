@@ -1,5 +1,5 @@
 {
-    programs.anki = {
-        enable = true;
-    };
+  programs.anki = {
+    enable = true;
+  };
 }

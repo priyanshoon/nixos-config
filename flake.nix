@@ -19,8 +19,8 @@
     };
 
     helium = {
-        url = "github:oxcl/nix-flake-helium-browser";
-        inputs.nixpkgs.follows = "nixpkgs";
+      url = "github:oxcl/nix-flake-helium-browser";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     agenix.url = "github:ryantm/agenix";
@@ -35,7 +35,12 @@
   };
 
   outputs =
-    inputs@{ nixpkgs, home-manager, agenix, ... }:
+    inputs@{
+      nixpkgs,
+      home-manager,
+      agenix,
+      ...
+    }:
     {
       nixosConfigurations = {
         nixos = nixpkgs.lib.nixosSystem {
