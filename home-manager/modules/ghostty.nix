@@ -10,7 +10,7 @@
       font-family = lib.mkForce "Hack Nerd Font Mono";
       # font-family = lib.mkForce "GeistMono Nerd Font";
       cursor-style = "block";
-      font-size = 15;
+      font-size = 15.5;
     };
   };
 }
