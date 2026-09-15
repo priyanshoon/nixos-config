@@ -6,6 +6,7 @@
     inputs.bootdev.packages.${stdenv.hostPlatform.system}.bootdev
     inputs.llm-agents.packages.${stdenv.hostPlatform.system}.pi
     inputs.llm-agents.packages.${stdenv.hostPlatform.system}.omp
+    inputs.llm-agents.packages.${stdenv.hostPlatform.system}.opencode
 
     # Desktop apps
     mpv
