@@ -5,6 +5,7 @@
 
   home.packages = with pkgs; [
     nerd-fonts.mononoki
+    nerd-fonts.terminess-ttf
     nerd-fonts.hack
     nerd-fonts.fira-code
     nerd-fonts.geist-mono

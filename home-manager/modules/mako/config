@@ -1,5 +1,5 @@
 
-### Nord Theme for mako ###
+### Muted night-kitchen theme — matches Waybar ###
 
 # Font
 font=Mononoki Nerd Font 10
@@ -17,25 +17,25 @@ icons=1
 max-icon-size=32
 
 # Default colors
-background-color=#2E3440
-text-color=#ECEFF4
-border-color=#88C0D0
+background-color=#111817
+text-color=#C5D0CC
+border-color=#89A8A7
 
 default-timeout=0
 
 # Low urgency
 [urgency=low]
-border-color=#5E81AC
-background-color=#2E3440
-text-color=#E5E9F0
+border-color=#52615D
+background-color=#1D2928
+text-color=#9AABA5
 
 # Normal urgency
 [urgency=normal]
-border-color=#88C0D0
+border-color=#89A8A7
 
 # Critical urgency
 [urgency=critical]
-background-color=#3B4252
-border-color=#BF616A
-text-color=#ECEFF4
+background-color=#2A3836
+border-color=#B06F72
+text-color=#C5D0CC
 
