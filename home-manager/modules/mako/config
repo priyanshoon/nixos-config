@@ -2,7 +2,7 @@
 ### Muted night-kitchen theme — matches Waybar ###
 
 # Font
-font=Mononoki Nerd Font 10
+font=Terminess Nerd Font 12
 
 # Layout
 padding=10
