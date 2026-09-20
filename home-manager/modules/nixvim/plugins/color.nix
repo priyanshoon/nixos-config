@@ -90,12 +90,12 @@
   #   hl("LspReferenceWrite", { bg = colors.line })
   # '';
 
-    programs.nixvim = {
-        colorschemes.vscode = {
-            enable = true;
-            settings = {
-                transparent = true;
-            };
-        };
+  programs.nixvim = {
+    colorschemes.vscode = {
+      enable = true;
+      settings = {
+        transparent = true;
+      };
     };
+  };
 }
