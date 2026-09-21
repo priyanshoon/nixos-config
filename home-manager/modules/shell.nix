@@ -1,4 +1,8 @@
-{ lib, config, ... }: {
+{
+  lib,
+  config,
+  ...
+}: {
   programs = {
     bash = {
       enable = true;
@@ -58,6 +62,7 @@
           error_symbol = "[ λ ](bold red)";
         };
         username = {
+          disabled = true;
           show_always = true;
           format = "[$user]($style)@";
         };

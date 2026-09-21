@@ -12,7 +12,7 @@
     ./thunderbird.nix
     ./direnv.nix
     ./tmux.nix
-    ./nixvim
+    # ./nixvim
     ./git.nix
     ./fonts.nix
   ];

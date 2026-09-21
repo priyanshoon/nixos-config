@@ -1,4 +1,8 @@
-{ inputs, pkgs, ... }: {
+{
+  inputs,
+  pkgs,
+  ...
+}: {
   nixpkgs.config.allowUnfree = true;
 
   home.packages = with pkgs; [
@@ -66,6 +70,8 @@
     gcc
     uv
     jetbrains.idea
+    rustc
+    cargo
 
     # wm stuff
     waybar

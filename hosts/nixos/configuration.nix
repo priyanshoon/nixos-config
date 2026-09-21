@@ -2,8 +2,7 @@
   pkgs,
   inputs,
   ...
-}:
-{
+}: {
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
@@ -95,7 +94,7 @@
         "kvm"
         "wireshark"
       ];
-      packages = with pkgs; [ kdePackages.kate ];
+      packages = with pkgs; [kdePackages.kate];
     };
   };
 
@@ -126,6 +125,7 @@
     rar
 
     qbittorrent
+    inputs.nvim-wrapped.packages.${pkgs.stdenv.hostPlatform.system}.default
     docker-compose
 
     openssl
@@ -168,5 +168,4 @@
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "26.05"; # Did you read the comment?
-
 }
