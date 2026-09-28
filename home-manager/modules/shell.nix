@@ -36,7 +36,6 @@
     btop = {
       enable = true;
       settings = {
-        color_theme = lib.mkForce "kanagawa-wave";
         theme_background = lib.mkForce false;
       };
     };

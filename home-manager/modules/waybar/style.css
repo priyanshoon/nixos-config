@@ -1,25 +1,25 @@
-/* Muted night-kitchen palette — charcoal, blue-grey, and sage */
+/* Solarized Dark — Waybar style */
 
-@define-color base     #1d2928;
-@define-color mantle   #111817;
-@define-color crust    #080d0e;
+@define-color base     #002b36;
+@define-color mantle   #073642;
+@define-color crust    #002b36;
 
-@define-color text     #c5d0cc;
-@define-color subtext0 #9aaba5;
-@define-color subtext1 #74847e;
-@define-color overlay0 #52615d;
+@define-color text     #839496;
+@define-color subtext0 #657b83;
+@define-color subtext1 #586e75;
+@define-color overlay0 #586e75;
 
-@define-color surface0 #2a3836;
-@define-color surface1 #3d4d49;
+@define-color surface0 #073642;
+@define-color surface1 #586e75;
 
-@define-color mauve    #b3949a;
-@define-color lavender #a9c0bb;
-@define-color blue     #89a8a7;
-@define-color teal     #7f9f94;
-@define-color green    #9caf95;
-@define-color yellow   #c5a979;
-@define-color peach    #b18b7c;
-@define-color red      #b06f72;
+@define-color mauve    #d33682;
+@define-color lavender #6c71c4;
+@define-color blue     #268bd2;
+@define-color teal     #2aa198;
+@define-color green    #859900;
+@define-color yellow   #b58900;
+@define-color peach    #cb4b16;
+@define-color red      #dc322f;
 
 * {
     all: unset;
@@ -28,7 +28,7 @@
 }
 
 window#waybar {
-    background-color: rgba(17, 24, 23, 0.90);
+    background-color: #00141b;
 }
 
 tooltip {
@@ -96,7 +96,7 @@ menu menuitem:hover {
 }
 
 #workspaces button.active {
-    background-color: rgba(61, 77, 73, 0.88);
+    background-color: rgba(7, 54, 66, 0.88);
     color: @mauve;
     font-weight: bold;
 }
