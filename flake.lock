@@ -282,11 +282,11 @@
         "wrappers": "wrappers"
       },
       "locked": {
-        "lastModified": 1790148149,
-        "narHash": "sha256-ZdTjLNNK+h/hDJQo6WKEsk8Pi0kbbCMksppUbLzBfOM=",
+        "lastModified": 1790674332,
+        "narHash": "sha256-S5RwoPKjj4HJx5azoPQ6AfoI5/4sm29d0YvITL93QJo=",
         "ref": "refs/heads/main",
-        "rev": "b1e757f11f1f97fc53e976f3532dd0e1e318aa17",
-        "revCount": 9,
+        "rev": "47c72014047df4601e67d4856ebcda4f4d0b951e",
+        "revCount": 11,
         "type": "git",
         "url": "file:///home/priyanshoon/.config/nvim"
       },

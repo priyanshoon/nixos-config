@@ -19,6 +19,7 @@
     brave
     obsidian
     aseprite
+    vesktop
 
     # CLI utils
     unrar
