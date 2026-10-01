@@ -17,7 +17,6 @@
     gimp3
     brave
     obsidian
-    aseprite
     vesktop
 
     # CLI utils
@@ -69,14 +68,12 @@
     typst
     gcc
     uv
-    jetbrains.idea
     rustc
     cargo
 
     # wm stuff
     waybar
     playerctl
-    # mako
     libnotify
     hyprpaper
   ];
