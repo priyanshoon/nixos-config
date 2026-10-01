@@ -9,7 +9,6 @@
     # flake inputs packages
     inputs.bootdev.packages.${stdenv.hostPlatform.system}.bootdev
     inputs.llm-agents.packages.${stdenv.hostPlatform.system}.pi
-    inputs.llm-agents.packages.${stdenv.hostPlatform.system}.opencode2
 
     # Desktop apps
     mpv
@@ -77,7 +76,7 @@
     # wm stuff
     waybar
     playerctl
-    mako
+    # mako
     libnotify
     hyprpaper
   ];

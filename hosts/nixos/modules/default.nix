@@ -1,7 +1,8 @@
 {
   imports = [
     ./ld.nix
-    ./llama_cpp.nix
+    ./niri.nix
+    # ./llama_cpp.nix
     # ./net.nix
     ./otd.nix
     ./kde-connect.nix

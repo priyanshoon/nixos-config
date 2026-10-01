@@ -10,8 +10,18 @@
   ];
 
   # Bootloader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  # boot.loader.systemd-boot.enable = true;
+  # boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader = {
+    efi = {
+      canTouchEfiVariables = true;
+    };
+    grub = {
+      enable = true;
+      efiSupport = true;
+      device = "nodev";
+    };
+  };
   nix.settings.experimental-features = [
     "nix-command"
     "flakes"
@@ -47,6 +57,7 @@
 
   services.xserver.enable = true;
   services.displayManager.sddm.enable = true;
+  services.displayManager.defaultSession = "niri";
   services.desktopManager.plasma6.enable = true;
 
   services.xserver.xkb = {
@@ -126,6 +137,7 @@
 
     qbittorrent
     inputs.nvim-wrapped.packages.${pkgs.stdenv.hostPlatform.system}.default
+    inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
     docker-compose
 
     openssl

@@ -1,7 +1,9 @@
+/* Solarized Dark — Wofi style */
+
 window {
   margin: 0px;
-  border: 5px solid;
-  background-color: #282828;
+  border: 5px solid #2aa198;
+  background-color: #002b36;
   font-family: "Mononoki Nerd Font";
   font-weight: bold;
   font-size: 16px;
@@ -10,20 +12,20 @@ window {
 #input {
   margin: 5px;
   border: none;
-  color: #ebdbb2;
-  background-color: #1d2021;
+  color: #839496;
+  background-color: #073642;
 }
 
 #inner-box {
   margin: 5px;
   border: none;
-  background-color: #282828;
+  background-color: #002b36;
 }
 
 #outer-box {
   margin: 5px;
   border: none;
-  background-color: #282828;
+  background-color: #002b36;
 }
 
 #scroll {
@@ -34,9 +36,10 @@ window {
 #text {
   margin: 5px;
   border: none;
-  color: #ebdbb2;
+  color: #839496;
 }
 
 #entry:selected {
-  color: #ffffff;
+  background-color: #586e75;
+  color: #fdf6e3;
 }

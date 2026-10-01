@@ -276,17 +276,37 @@
         "type": "github"
       }
     },
+    "noctalia": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1790691318,
+        "narHash": "sha256-tafFEpBW/ffCk5I664k3kP+p1DyeLu0D9kfSYFFRuV4=",
+        "owner": "noctalia-dev",
+        "repo": "noctalia",
+        "rev": "368755604302360009d9b94c6da5fc6162477733",
+        "type": "github"
+      },
+      "original": {
+        "owner": "noctalia-dev",
+        "repo": "noctalia",
+        "type": "github"
+      }
+    },
     "nvim-wrapped": {
       "inputs": {
         "nixpkgs": "nixpkgs_6",
         "wrappers": "wrappers"
       },
       "locked": {
-        "lastModified": 1790674332,
-        "narHash": "sha256-S5RwoPKjj4HJx5azoPQ6AfoI5/4sm29d0YvITL93QJo=",
+        "lastModified": 1790825033,
+        "narHash": "sha256-bTZ9PzDBF1HLs+GVyPtx+rY/AQylu6Yv4G9dDN8QX94=",
         "ref": "refs/heads/main",
-        "rev": "47c72014047df4601e67d4856ebcda4f4d0b951e",
-        "revCount": 11,
+        "rev": "172f2081d15795c5fd829c5304f66bc2d32cd088",
+        "revCount": 12,
         "type": "git",
         "url": "file:///home/priyanshoon/.config/nvim"
       },
@@ -304,6 +324,7 @@
         "llm-agents": "llm-agents",
         "nixos-hardware": "nixos-hardware",
         "nixpkgs": "nixpkgs_5",
+        "noctalia": "noctalia",
         "nvim-wrapped": "nvim-wrapped"
       }
     },

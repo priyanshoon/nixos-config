@@ -1,10 +1,11 @@
 {
   imports = [
     ./shell.nix
+    ./niri
     ./zed.nix
     ./anki.nix
     ./hyprland
-    ./mako
+    # ./mako
     ./ghostty.nix
     ./waybar
     ./wofi

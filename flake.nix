@@ -2,9 +2,10 @@
   description = "uwu nixos config";
 
   nixConfig = {
-    extra-substituters = ["https://cache.nixos-cuda.org"];
+    extra-substituters = ["https://cache.nixos-cuda.org" "https://noctalia.cachix.org"];
     extra-trusted-public-keys = [
       "cache.nixos-cuda.org:74DUi4Ye579gUqzH4ziL9IyiJBlDpMRn9MBN8oNan9M="
+      "noctalia.cachix.org-1:pCOR47nnMEo5thcxNDtzWpOxNFQsBRglJzxWPp3dkU4="
     ];
   };
 
@@ -18,6 +19,11 @@
     helium = {
       url = "github:oxcl/nix-flake-helium-browser";
       inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    noctalia = {
+      url = "github:noctalia-dev/noctalia";
+      inputs.nixpkgs.follows = "nixpkgs"; # this line is optional, prevents downloading two versions of nixpkgs but disables cache
     };
 
     agenix.url = "github:ryantm/agenix";
