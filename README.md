@@ -1,6 +1,6 @@
 # NixOS Configuration
 
-![NixOS setup](assets/setup.png)
+![NixOS setup](./assets/setup2.png)
 
 Personal NixOS and Home Manager configuration, built around a modern Wayland desktop.
 
