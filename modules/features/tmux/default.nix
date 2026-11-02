@@ -1,0 +1,106 @@
+{
+  inputs,
+  moduleWithSystem,
+  ...
+}: {
+  flake.nixosModules.tmux = moduleWithSystem ({
+    pkgs,
+    self',
+    ...
+  }: {
+    nixpkgs.overlays = [
+      (final: prev: {
+        tmux = self'.packages.tmux;
+      })
+    ];
+    programs.tmux = {
+      enable = true;
+    };
+
+    environment.systemPackages = [
+      self'.packages.tmux-personal
+      self'.packages.tmux-work
+    ];
+  });
+  perSystem = {
+    pkgs,
+    lib,
+    ...
+  }: {
+    packages = {
+      tmux-personal = pkgs.writeScriptBin "tmux-personal" ''
+        selected=$(find ~/personal -mindepth 1 -maxdepth 1 -type d | fzf)
+        if [[ -z "$selected" ]]; then
+            exit 0
+        fi
+
+        selected_name=$(basename $selected | tr ":,. ", "____")
+
+        switch_to() {
+            if [[ -z "$TMUX" ]]; then
+                tmux -u attach-session -t $selected_name
+            else
+                tmux -u switch-client -t $selected_name
+            fi
+        }
+
+        if tmux has-session -t=$selected_name 2> /dev/null; then
+            switch_to
+        else
+            tmux -u new-session -ds $selected_name -c $selected
+            switch_to
+        fi
+      '';
+
+      tmux-work = pkgs.writeScriptBin "tmux-work" ''
+        selected=$(find ~/workspace -mindepth 1 -maxdepth 1 -type d | fzf)
+        if [[ -z "$selected" ]]; then
+            exit 0
+        fi
+
+        selected_name=$(basename $selected | tr ":,. ", "____")
+
+        switch_to() {
+            if [[ -z "$TMUX" ]]; then
+                tmux -u attach-session -t $selected_name
+            else
+                tmux -u switch-client -t $selected_name
+            fi
+        }
+
+        if tmux has-session -t=$selected_name 2> /dev/null; then
+            switch_to
+        else
+            tmux -u new-session -ds $selected_name -c $selected
+            switch_to
+        fi
+      '';
+      tmux = inputs.wrappers.wrappers.tmux.wrap {
+        inherit pkgs;
+        baseIndex = 1;
+        escapeTime = 0;
+        modeKeys = "vi";
+        configAfter = ''
+          set -as terminal-overrides ',*:sitm=\E[3m'
+
+          unbind C-b
+          set-option -g prefix C-a
+          bind-key C-a send-prefix
+          bind -T copy-mode-vi v send-keys -X begin-selection
+          bind -T copy-mode-vi y send-keys -X copy-pipe-and-cancel 'xclip -in -selection clipboard'
+          bind r source-file $XDG_CONFIG_HOME/tmux/tmux.conf \; display-message "tmux.conf reloaded"
+
+          set -g extended-keys-format csi-u
+
+          bind -r h select-pane -L
+          bind -r j select-pane -D
+          bind -r k select-pane -U
+          bind -r l select-pane -R
+          set -g extended-keys on
+
+          bind-key C-t run-shell "tmux neww tmux-personal"
+        '';
+      };
+    };
+  };
+}
