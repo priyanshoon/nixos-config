@@ -20,6 +20,7 @@
       unzip
       jq
       binutils
+      bootdev-cli
       udisks
       file
       zip

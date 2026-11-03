@@ -14,6 +14,7 @@
       nvim
       git
       tmux
+      ai-slop
       network
       nix-ld
       systemTheme

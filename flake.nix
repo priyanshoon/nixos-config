@@ -9,6 +9,7 @@
     # apps
     nvim.url = "github:priyanshoon/nvim";
     noctalia.url = "github:noctalia-dev/noctalia/cachix";
+    llm-agents.url = "github:numtide/llm-agents.nix";
   };
 
   outputs = inputs:
