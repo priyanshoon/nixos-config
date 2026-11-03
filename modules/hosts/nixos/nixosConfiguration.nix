@@ -5,7 +5,6 @@
       pinentryPackage = pkgs.pinentry-all;
     };
     environment.systemPackages = with pkgs; [
-      git
       pass
       localsend
       qbittorrent
