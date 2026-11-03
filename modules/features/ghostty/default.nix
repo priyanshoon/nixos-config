@@ -21,7 +21,7 @@
       inherit pkgs;
       settings = {
         theme = "Vague";
-        font-family = "Hurmit Nerd Font";
+        font-family = "AnnotationM Nerd Font";
         cursor-style = lib.mkForce "block";
         background-opacity = 0.85;
       };

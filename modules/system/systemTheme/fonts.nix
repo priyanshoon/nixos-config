@@ -22,6 +22,7 @@
       };
       packages = with pkgs; [
         nerd-fonts.hurmit
+        nerd-fonts.annotationmono
         ubuntu-classic
         liberation_ttf
         nerd-fonts.fira-mono
