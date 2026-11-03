@@ -10,13 +10,15 @@
   }: let
   in {
     environment.systemPackages = with pkgs; [
-      bibata-cursors
+      gnome.adwaita-icon-theme
     ];
 
     environment.variables = {
-      XCURSOR_THEME = "Bibata-Modern-Classic";
+      XCURSOR_THEME = "Adwaita";
       XCURSOR_SIZE = "24";
     };
+
+    environment.etc."icons/default".source = "${pkgs.gnome.adwaita-icon-theme}/share/icons/Adwaita";
 
     programs.dconf.profiles.user.databases = [
       {
