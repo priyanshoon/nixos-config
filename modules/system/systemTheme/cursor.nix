@@ -10,6 +10,9 @@
   }: let
   in {
     fonts.packages = with pkgs; [
+      nerd-fonts.hurmit
+      nerd-fonts.fira-mono
+      nerd-fonts.jetbrains-mono
       dejavu_fonts
       noto-fonts
       noto-fonts-cjk-sans
@@ -20,11 +23,6 @@
       mplus-outline-fonts.githubRelease
       dina-font
       proggyfonts
-    ];
-    fonts.packages = with pkgs.nerd-fonts; [
-      hurmit
-      fira-mono
-      jetbrains-mono
     ];
     environment.systemPackages = with pkgs; [
       bibata-cursors
