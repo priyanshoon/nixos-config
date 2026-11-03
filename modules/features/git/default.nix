@@ -30,7 +30,6 @@
           name = "Priyanshu";
           signingKey = "/home/pd/.ssh/id_ed25519.pub";
         };
-        credential.helper = "store";
         commit.gpgSign = true;
         gpg.format = "ssh";
       };

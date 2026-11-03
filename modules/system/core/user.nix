@@ -18,11 +18,9 @@
       shell = lib.mkForce pkgs.zsh;
       description = "priyanshu gupta";
       extraGroups = [
-        "root"
         "audio"
         "video"
         "wheel"
-        "plugdev"
         "networkmanager"
       ];
     };
