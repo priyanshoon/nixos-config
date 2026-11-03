@@ -28,7 +28,7 @@
         user = {
           email = "priyanshoon.pg@gmail.com";
           name = "Priyanshu";
-          signingKey = "~/.ssh/id_ed25519.pub";
+          signingKey = "/home/pd/.ssh/id_ed25519.pub";
         };
         credential.helper = "store";
         commit.gpgSign = true;
