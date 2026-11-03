@@ -12,6 +12,7 @@
     modules = with self.nixosModules; [
       bibataCursors
       catppuccinGtk
+      fontiConfig
     ];
   in {
     imports = modules;
