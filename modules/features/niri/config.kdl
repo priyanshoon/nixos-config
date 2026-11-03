@@ -1,7 +1,8 @@
 prefer-no-csd
 
-environment {
-  XCURSOR_THEME "Bibata-Modern-Classic"
+cursor {
+  xcursor-theme "Adwaita"
+  xcursor-size 24
 }
 
 input {

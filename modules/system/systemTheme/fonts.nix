@@ -16,7 +16,7 @@
         defaultFonts = {
           serif = ["Liberation Serif"];
           sansSerif = ["Ubuntu"];
-          monospace = ["Ubuntu Mono"];
+          monospace = ["Hurmit Nerd Font"];
         };
         useEmbeddedBitmaps = true;
       };

@@ -23,7 +23,6 @@
         theme = "Vague";
         font-family = "Hurmit Nerd Font";
         cursor-style = lib.mkForce "block";
-        font-size = 16;
         background-opacity = 0.85;
       };
     };
