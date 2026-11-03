@@ -11,6 +11,30 @@
       qbittorrent
       nautilus
       tor-browser
+      telegram-desktop
+      gimp
+      imv
+      yt-dlp
+      ffmpeg
+      man-db
+      man-pages
+      unzip
+      jq
+      binutils
+      udisks
+      file
+      zip
+      go
+      nodejs
+      glibc
+      libgcc
+      gnumake
+      just
+      gcc
+      uv
+      rustc
+      cargo
+      pnpm
     ];
   };
 }
