@@ -11,7 +11,6 @@
     environment.systemPackages = with pkgs; [
       playerctl
       pavucontrol
-      pulseaudioFull
       pipewire
     ];
     services.pulseaudio.enable = false;
