@@ -12,6 +12,7 @@
       audio
       desktop
       nvim
+      git
       tmux
       network
       nix-ld
