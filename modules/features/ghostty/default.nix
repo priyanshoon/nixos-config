@@ -22,6 +22,7 @@
       settings = {
         theme = "Vague";
         font-family = "AnnotationM Nerd Font";
+        font-size = 15.5;
         cursor-style = lib.mkForce "block";
         background-opacity = 0.85;
       };
