@@ -243,11 +243,11 @@
         "wrappers": "wrappers"
       },
       "locked": {
-        "lastModified": 1793717280,
-        "narHash": "sha256-GzPKWBjY5VbucpZMpDPyr7ePABKVVcum5qt1DblYcOY=",
+        "lastModified": 1793884979,
+        "narHash": "sha256-Ux3FMb2hJFxVoPpzcWiUnrmoy2aqDwRWasNp1dDUyqs=",
         "owner": "priyanshoon",
         "repo": "nvim",
-        "rev": "c74435b54c8437f6b828313d3a40f91e453d0451",
+        "rev": "9e82b2609dddccb6040a7a71f884eb8f0fa9ee36",
         "type": "github"
       },
       "original": {
