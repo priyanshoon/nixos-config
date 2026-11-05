@@ -16,6 +16,7 @@
       tmux
       ai-slop
       network
+      krita
       nix-ld
       systemTheme
     ];

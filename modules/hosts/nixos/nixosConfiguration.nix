@@ -18,7 +18,6 @@
       man-db
       man-pages
       unzip
-      krita
       jq
       binutils
       bootdev-cli
