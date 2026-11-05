@@ -14,6 +14,9 @@
       ++ modules;
 
     services.gvfs.enable = true;
+    hardware.opentabletdriver.enable = true;
+    hardware.uinput.enable = true;
+    boot.kernelModules = ["uinput"];
 
     environment.systemPackages = with pkgs; [
       vim
