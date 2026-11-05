@@ -2,6 +2,7 @@
   flake.nixosModules.core = {pkgs, ...}: let
     modules = with self.nixosModules; [
       user
+      hardware
       bootloader
       nix
       locale
